@@ -10,4 +10,7 @@ echo "source ~/.myprof/.bashrc" >> ~/.bashrc
 echo Installing tmux config...
 ln -sf ~/.myprof/.tmux.conf ~/.tmux.conf
 
+echo Installing vim config...
+ln -sf ~/.myprof/.vimrc ~/.vimrc
+
 echo Done.
