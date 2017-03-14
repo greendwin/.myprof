@@ -7,3 +7,6 @@ git config --global core.editor "vim"
 
 # it can be `matching` if we want to push all branches with matching names
 git config --global push.default simple
+
+# cache passed password for long time (i.e. 10 hours)
+git config --global credential.helper 'cache --timeout=36000'
