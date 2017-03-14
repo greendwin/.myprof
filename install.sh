@@ -8,6 +8,6 @@ sed -i "s/BASH_IT_THEME='.*'/BASH_IT_THEME='bakke'/g" ~/.bashrc
 echo "source ~/.myprof/.bashrc" >> ~/.bashrc
 
 echo Installing tmux config...
-ln -s ~/.myprof/.tmux.conf ~/.tmux.conf
+ln -sf ~/.myprof/.tmux.conf ~/.tmux.conf
 
 echo Done.
