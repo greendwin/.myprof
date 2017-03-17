@@ -1,7 +1,7 @@
 
 # add git helper aliases
 alias gs="git status"
-alias gadd="git add . && git status"
+alias gadd="git add --all . && git status"
 alias gcm="git commit -m"
 
 alias dps="docker ps"
