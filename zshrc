@@ -4,10 +4,19 @@
 #	- avit
 #	- ys
 
+# plugins:
+#	- common-aliases
+#	- lol
+#	- tmux
+#	- pip, pyenv, python
+#	- docker
+
 reload() {
 	echo Reloading ~/.zshrc
 	source ~/.zshrc
 }
+
+alias gs="git status"
 
 alias install='sudo apt-get install'
 alias search-apt='apt-cache search'

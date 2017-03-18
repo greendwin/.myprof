@@ -12,6 +12,6 @@ echo Installing tmux config...
 ln -sf ~/.myprof/tmux.conf ~/.tmux.conf
 
 echo Installing vim config...
-ln -sf ~/.myprof/vimrc ~/.vimrc
+echo "so ~/.myprof/vimrc" >> ~/.vimrc
 
 echo Done.

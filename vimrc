@@ -1,3 +1,4 @@
+
 " enable security for .vimrc parsing
 set exrc
 set secure
