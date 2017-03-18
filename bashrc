@@ -1,15 +1,21 @@
 
-# run tmux on startup
-if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-fi
+MY_PROF=~/.myprof
+
+source $MY_PROF/tmux_autorun.sh
+
+alias install="sudo apt-get install"
 
 # add git helper aliases
 if [[ -x `type -p git 2>&1` ]]; then
-	alias gs="git status"
-	alias gadd="git add --all . && git status"
-	alias gdiff="git diff"
+	alias g="git"
+	alias ga="git add"
+	alias gaa="git add --all"
+	alias gb="git branch"
+	alias gst="git status"
+	alias gc="git commit -v"
+	alias gd="git diff"
 	alias gcm="git commit -m"
+	alias gco="git checkout"
 fi
 
 # docker helpers
