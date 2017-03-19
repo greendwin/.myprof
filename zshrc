@@ -26,3 +26,9 @@ unalias gp
 unalias gl
 
 alias gl='glog'
+
+# let G will pass colors always (so it's possible to use less)
+# GG version should be used for output to files
+unalias 'G'
+alias -g G='| grep --color=always'
+alias -g GG='| grep'
