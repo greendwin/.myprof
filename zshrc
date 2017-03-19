@@ -13,7 +13,7 @@
 
 # run tmux on startup
 if command -v tmux>/dev/null; then
-	[[ ! $TERM =~ screen ]] && [ -z $TMUX ] && tmux new -At $USER
+	[[ ! $TERM =~ screen ]] && [ -z $TMUX ] && tmux new -As $USER
 fi
 
 # functions and aliases
