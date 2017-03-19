@@ -1,7 +1,10 @@
 
 MY_PROF=~/.myprof
 
-source $MY_PROF/tmux_autorun.sh
+# run tmux on startup
+if command -v tmux>/dev/null; then
+	[[ ! $TERM =~ screen ]] && [ -z $TMUX ] && tmux new -At $USER
+fi
 
 alias install="sudo apt-get install"
 

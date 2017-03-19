@@ -11,6 +11,12 @@
 #	- pip, pyenv, python
 #	- docker
 
+# run tmux on startup
+if command -v tmux>/dev/null; then
+	[[ ! $TERM =~ screen ]] && [ -z $TMUX ] && tmux new -At $USER
+fi
+
+# functions and aliases
 reload() {
 	echo Reloading ~/.zshrc
 	source ~/.zshrc
