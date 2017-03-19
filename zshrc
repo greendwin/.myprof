@@ -11,10 +11,7 @@
 #	- pip, pyenv, python
 #	- docker
 
-# run tmux on startup
-if command -v tmux>/dev/null; then
-	[[ ! $TERM =~ screen ]] && [ -z $TMUX ] && tmux new -As $USER
-fi
+source ~/.myprof/tmux_autorun.sh
 
 # functions and aliases
 reload() {
