@@ -19,6 +19,10 @@ reload() {
 	source ~/.zshrc
 }
 
+mkcd() {
+	mkdir -p "$1" && cd "$1";
+}
+
 alias gs='git status'
 alias gl='glog'
 
