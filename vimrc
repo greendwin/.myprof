@@ -14,4 +14,4 @@ set shiftwidth=2
 set expandtab
 
 autocmd Filetype cpp setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
-
+autocmd Filetype make setlocal noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
