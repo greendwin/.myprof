@@ -6,7 +6,7 @@ sudo apt-get install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="avit"/g' ~/.zshrc
-sed -i 's/plugins=\(.*\)/plugins=\(common-aliases git\)/g' ~/.zshrc
+# sed -i 's/plugins=\(.*\)/plugins=\(common-aliases git\)/g' ~/.zshrc
 
 # append our custom bashrc to bash_it
 echo "source ~/.myprof/zshrc" >> ~/.zshrc
