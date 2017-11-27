@@ -23,6 +23,14 @@ mkcd() {
 	mkdir -p "$1" && cd "$1";
 }
 
+unpack() {
+  filename="$1"
+  case $filename in
+    *.tgz) tar zxvf $filename ;;
+    *) echo "Error: Unknown archive type" ;;
+  esac
+}
+
 alias gs='git status'
 alias gl='glog'
 
