@@ -26,7 +26,8 @@ mkcd() {
 unpack() {
   filename="$1"
   case $filename in
-    *.tgz) tar zxvf $filename ;;
+    *.tgz)    tar zxvf $filename ;;
+    *.tar.xz) tar xvfJ $filename ;;
     *) echo "Error: Unknown archive type" ;;
   esac
 }
