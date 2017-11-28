@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt-get install -y zsh
+sudo apt-get install -y zsh atool
 
 # install Oh-My-Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
