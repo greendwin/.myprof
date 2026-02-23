@@ -11,12 +11,13 @@ sed -i 's|^plugins=(|plugins=(\n  common-aliases |g' ~/.zshrc
 # append our custom bashrc to bash_it
 echo "source ~/.myprof/zshrc" >> ~/.zshrc
 
-echo Installing tmux config...
+# TODO: rework to `stow`
+# echo Installing tmux config...
 # TODO: use new file & source execution for custom overrides support
-ln -sf ~/.myprof/tmux.conf ~/.tmux.conf
-
-echo Installing vim config...
-echo "so ~/.myprof/vimrc" >> ~/.vimrc
+# ln -sf ~/.myprof/tmux.conf ~/.tmux.conf
+# 
+# echo Installing vim config...
+# echo "so ~/.myprof/vimrc" >> ~/.vimrc
 
 echo Done.
 
