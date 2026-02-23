@@ -1,0 +1,19 @@
+[user]
+	name = Evgeniy A. Cymbalyuk
+	email = cimbaluk@gmail.com
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[alias]
+	ll = log --graph --all --pretty=format:\"%C(green)%h%x20%C(auto)%d%x20%C(yellow)%aN%x20%C(reset)%s\"
+[merge]
+	conflictStyle = diff3
+[advice]
+	skippedCherryPicks = false
+[pull]
+	rebase = true
+[remote "origin"]
+	tagopt = --no-tags
+[credential]
+	helper = cache --timeout=36000
