@@ -18,7 +18,7 @@ echo '[[ -f "$HOME/.zshuser" ]] && source "$HOME/.zshuser"' >> ~/.zshrc
 cd ~/.myprof
 stow zsh
 
-echo "set ZSH_THEME var in `.zshrc` for your theme"
+echo "set ZSH_THEME var in .zshrc for your theme"
 echo "list of good themes:"
 echo " - crcandy"
 echo " - avit"

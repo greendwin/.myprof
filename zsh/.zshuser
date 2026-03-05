@@ -25,9 +25,6 @@ alias gs='git status'
 # unalias gp
 # unalias gl
 
-# stop asking me on every deletion
-unalias rm
-
 # let G will pass colors always (so it's possible to use less)
 # GG version should be used for output to files
 unalias 'G'
