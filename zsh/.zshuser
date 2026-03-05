@@ -1,0 +1,33 @@
+
+# good themes:
+#	- crcandy
+#	- avit
+#	- ys
+
+# TODO: need comments on what each plugin does
+# zsh plugins:
+#	- common-aliases
+#	- lol
+#	- tmux
+#	- pip, pyenv, python
+#	- docker
+
+# functions and aliases
+reload() {
+	echo Reloading ~/.zshrc
+	source ~/.zshrc
+}
+
+alias gs='git status'
+
+# TODO: replace by `gpush` and `gpull`
+# remove potentially harmful aliases
+# unalias gp
+# unalias gl
+
+# let G will pass colors always (so it's possible to use less)
+# GG version should be used for output to files
+unalias 'G'
+alias -g G='| grep --color=always'
+alias -g GG='| grep'
+
