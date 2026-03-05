@@ -31,3 +31,4 @@ unalias 'G'
 alias -g G='| grep --color=always'
 alias -g GG='| grep'
 
+source ~/.myprof/tmux_autorun.sh
