@@ -1,12 +1,15 @@
 #!/bin/sh
 set -e
 
-# TBD: do we need `atool` install for easier unzips?
+if ! command -v zsh >/dev/null 2>&1; then
+  # install `zsh`
+  sudo apt-get install zsh -y
+fi
 
-sudo apt-get install zsh -y
-
-# install Oh-My-Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+if [ -z "$ZSH" ]; then
+  # install Oh-My-Zsh
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
 
 # sed -i 's|ZSH_THEME=".*"|ZSH_THEME="avit"|g' ~/.zshrc
 sed -i 's|^plugins=(|plugins=(common-aliases |g' ~/.zshrc
